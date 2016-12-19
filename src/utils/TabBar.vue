@@ -28,13 +28,14 @@
     export default{
         data(){
             return{
-                bottomNav:'movies',
+                bottomNav:'home',
                 bottomNavColor:'movies'
             }
         },
         methods:{
           handleChange(val){
-            this.bottomNav = val
+            this.bottomNav = val;
+            this.$router.push('./'+val);
           },
           toPath(path){
             this.$route.push(path);

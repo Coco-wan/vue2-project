@@ -27,6 +27,8 @@ module.exports = {
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components'),
+      'utils': path.resolve(__dirname, '../src/utils'),
+      'core': path.resolve(__dirname, '../src/core'),
       'muse-components': 'muse-ui/src'
     }
   },

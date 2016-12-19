@@ -7,9 +7,20 @@ import VueRouter from 'vue-router'
 import routes from './core/route'
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
+import 'muse-ui/dist/theme-carbon.css'
+import components from '../src/components'
+import VueResource from 'vue-resource'
+
+
+Object.keys(components).forEach((key) => {
+  var name = key.replace(/(\w)/, (v) => v.toUpperCase()) //首字母大写
+  Vue.component(`v${name}`, components[key])
+});
+
 
 Vue.use(MuseUI);
 Vue.use(VueRouter);
+Vue.use(VueResource);
 
 const router = new VueRouter({
   routes,

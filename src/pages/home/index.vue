@@ -10,16 +10,18 @@
 </style>
 <template>
   <div>
-    <hello></hello>
+    <v-content>
+      <v-hello></v-hello>
+      <button @click='alertThis()'>click me </button>
+    </v-content>
   </div>
 </template>
 <script>
-  import Hello from 'components/Hello'
-
   export default{
-    components:{
-      Hello,
-
-    },
+    methods:{
+      alertThis(){
+        console.log(this.$http);
+      }
+    }
   }
 </script>
