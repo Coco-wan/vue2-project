@@ -11,7 +11,6 @@
 <script>
   import TitleBar from 'utils/TitleBar'
   import TabBar from 'utils/TabBar'
-  import Dialog from 'utils/Dialog'
 export default {
   name: 'app',
     data(){
@@ -29,7 +28,7 @@ export default {
   components: {
       TitleBar,
       TabBar,
-      VDialog:Dialog
+
   },
   methods:{
 

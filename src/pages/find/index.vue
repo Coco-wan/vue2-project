@@ -2,14 +2,14 @@
 </style>
 <template>
   <div>
-
+    <v-dialog></v-dialog>
     </div>
 </template>
 <script>
-    import FlatButton from 'muse-components/flatButton'
+  import Dialog from 'utils/Dialog'
   export default{
 components:{
-  FlatButton
+VDialog:Dialog
 }
   }
 

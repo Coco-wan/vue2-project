@@ -19,8 +19,9 @@ import http from 'core/http'
 import url from 'core/requestUrl'
 export default {
   data(){
-
+    return{
       jsonData:null
+    }
 
   },
   methods:{
