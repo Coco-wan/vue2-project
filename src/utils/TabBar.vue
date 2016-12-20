@@ -28,10 +28,13 @@
     export default{
         data(){
             return{
-                bottomNav:'home',
+                bottomNav:null,
                 bottomNavColor:'movies',
 
             }
+        },
+        beforeMount(){
+          this.bottomNav = this.$route.fullPath.split('/').join('');
         },
         methods:{
           handleChange(val){

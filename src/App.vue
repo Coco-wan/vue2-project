@@ -27,7 +27,12 @@ export default {
     showTabBar(){
       let routeArray = this.$route.fullPath.split('/');
       if(routeArray.length > 2){
-        this.showFooter = false
+        this.showFooter = false;
+
+      }
+      else{
+        this.showFooter = true;
+
       }
     },
     alertR(){
@@ -35,7 +40,7 @@ export default {
     }
   },
   watch:{
-    $route:'showTabBar'
+    $route:'showTabBar',
   },
 }
 

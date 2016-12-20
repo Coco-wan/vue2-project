@@ -6,6 +6,7 @@ import App from './App'
 import VueRouter from 'vue-router'
 import routes from './core/route'
 import Mint from 'mint-ui'
+import MuseUi from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
 // import 'muse-ui/dist/theme-carbon.css'
 import 'mint-ui/lib/style.css'
@@ -20,6 +21,7 @@ Object.keys(components).forEach((key) => {
 
 
 Vue.use(Mint);
+Vue.use(MuseUi);
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
