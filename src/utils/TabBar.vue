@@ -44,9 +44,6 @@
           toPath(path){
             this.$route.push(path);
           },
-          alert(){
-            alert('It work');
-          }
         },
         components:{
             Paper,

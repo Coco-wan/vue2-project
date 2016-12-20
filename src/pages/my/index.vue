@@ -15,12 +15,9 @@
     <v-content>
       <button @click="testData">get data</button>
       <ul class="am-list am-list-static am-list-border">
-        <router-link :to='{name:"info",params:{name:"june"}}'>
-          <li>1232</li>
+        <router-link :to='{name:"info",params:{name:name}}'>
+          <li>go to info page</li>
         </router-link>
-        <li>1232</li>
-        <li>1232</li>
-        <li>1232</li>
       </ul>
     </v-content>
     <!--<v-actionsheet></v-actionsheet>-->

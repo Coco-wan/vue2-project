@@ -19,8 +19,6 @@
         },
         components:{
         },
-        mounted(){
-          console.log(this.$route.params)
-        }
+
     }
 </script>
