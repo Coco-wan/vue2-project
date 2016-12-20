@@ -1,15 +1,16 @@
 <template>
   <div id="app">
-    <title-bar :title='title' :titleClass='titleClass' :zDepth='zDepth'></title-bar>
+    <!--<title-bar :title='title' :titleClass='titleClass' :zDepth='zDepth'></title-bar>-->
+    <v-header :title="title"></v-header>
       <transition :name='transitionName'>
         <router-view></router-view>
       </transition>
+    <!--<v-footer></v-footer>-->
     <tab-bar></tab-bar>
   </div>
 </template>
 
 <script>
-  import TitleBar from 'utils/TitleBar'
   import TabBar from 'utils/TabBar'
 export default {
   name: 'app',
@@ -17,16 +18,11 @@ export default {
       return {
       transitionName:"slide-left",
         title:"mytitle",
-        titleClass:{
-          background:'#41b883'
-        },
-        zDepth:2,
         showDialog:false,
         content:"hahaha"
       }
     },
   components: {
-      TitleBar,
       TabBar,
 
   },

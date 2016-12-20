@@ -2,15 +2,8 @@
   <div class="hello">
     <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <h2>Essential Links</h2>
-    <h2>Essential Links</h2>
-    <h2>Essential Links</h2>
-    <h2>Essential Links</h2>
-    <h2>Essential Links</h2>
-    <h2>Essential Links</h2>
-    <h2>Essential Links</h2>
-    <h2>Essential Links</h2>
+    <h2 >Essential Links</h2>
+
 
   </div>
 </template>
@@ -22,6 +15,8 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  props:{
   }
 }
 </script>

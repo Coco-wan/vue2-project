@@ -5,9 +5,11 @@ import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
 import routes from './core/route'
-import MuseUI from 'muse-ui'
+import Mint from 'mint-ui'
+import MuseUi from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
-import 'muse-ui/dist/theme-carbon.css'
+// import 'muse-ui/dist/theme-carbon.css'
+import 'mint-ui/lib/style.css'
 import components from '../src/components'
 import VueResource from 'vue-resource'
 
@@ -18,7 +20,8 @@ Object.keys(components).forEach((key) => {
 });
 
 
-Vue.use(MuseUI);
+Vue.use(Mint);
+Vue.use(MuseUi);
 Vue.use(VueRouter);
 Vue.use(VueResource);
 

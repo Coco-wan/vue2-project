@@ -12,16 +12,13 @@
   <div>
     <v-content>
       <v-hello></v-hello>
-      <button @click='alertThis()'>click me </button>
     </v-content>
   </div>
 </template>
 <script>
   export default{
     methods:{
-      alertThis(){
-        console.log(this.$http);
-      }
+
     }
   }
 </script>

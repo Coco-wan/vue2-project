@@ -12,6 +12,10 @@
   <div>
     <button @click="testData">get data</button>
     <div>{{jsonData}}</div>
+    <mt-button type="default">default</mt-button>
+    <mt-button type="primary">primary</mt-button>
+    <mt-button type="danger">danger</mt-button>
+    <!--<v-actionsheet></v-actionsheet>-->
   </div>
 </template>
 <script>
