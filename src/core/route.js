@@ -6,6 +6,7 @@ import App from '../App'
 import Find from '../pages/find/index'
 import My from '../pages/my/index'
 import Home from '../pages/home/index'
+import Info from '../pages/info/index'
 
 export default [
   {
@@ -26,6 +27,11 @@ export default [
         path:'/home',
         name:'home',
         component:Home
+      },
+      {
+        path:'/my/info/',
+        name:'info',
+        component:Info
       },
       {
         path:'*',

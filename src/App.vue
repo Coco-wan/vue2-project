@@ -1,12 +1,11 @@
 <template>
   <div id="app">
     <!--<title-bar :title='title' :titleClass='titleClass' :zDepth='zDepth'></title-bar>-->
-    <v-header :title="title"></v-header>
       <transition :name='transitionName'>
         <router-view></router-view>
       </transition>
     <!--<v-footer></v-footer>-->
-    <tab-bar></tab-bar>
+    <tab-bar v-if='showFooter'></tab-bar>
   </div>
 </template>
 
@@ -17,9 +16,7 @@ export default {
     data(){
       return {
       transitionName:"slide-left",
-        title:"mytitle",
-        showDialog:false,
-        content:"hahaha"
+        showFooter:true
       }
     },
   components: {
@@ -27,8 +24,19 @@ export default {
 
   },
   methods:{
-
-  }
+    showTabBar(){
+      let routeArray = this.$route.fullPath.split('/');
+      if(routeArray.length > 2){
+        this.showFooter = false
+      }
+    },
+    alertR(){
+      console.log("route has change");
+    }
+  },
+  watch:{
+    $route:'showTabBar'
+  },
 }
 
 </script>

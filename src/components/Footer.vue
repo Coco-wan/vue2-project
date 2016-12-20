@@ -1,12 +1,12 @@
 <template>
     <div>
       <mt-tabbar fixed v-model="selected">
-        <mt-tab-item id="tab1" v-on:click='toPath("./home")'>
+        <mt-tab-item id="tab1" @click='toPath("./home")'>
           <img slot="icon" >
           home
         </mt-tab-item>
         <mt-tab-item id="tab2" @click='toPath("./find")'>
-          <img slot="icon" >
+          <img slot="icon">
           find
         </mt-tab-item>
         <mt-tab-item id="tab3" @click='toPath("./my")'>

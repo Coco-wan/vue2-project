@@ -19,6 +19,8 @@
           border-bottom: 1px solid #ddd;
         .title{
           height: 49px;
+          font-size:18px;
+          padding-top:4px
         }
      }
 </style>

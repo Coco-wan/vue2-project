@@ -29,7 +29,8 @@
         data(){
             return{
                 bottomNav:'home',
-                bottomNavColor:'movies'
+                bottomNavColor:'movies',
+
             }
         },
         methods:{

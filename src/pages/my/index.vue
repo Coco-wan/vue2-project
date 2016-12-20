@@ -1,4 +1,5 @@
 <style lang="less" scoped>
+  @import "../../styles/common";
   .about {
     padding: 10px;
     line-height: 22px;
@@ -10,11 +11,18 @@
 </style>
 <template>
   <div>
-    <button @click="testData">get data</button>
-    <div>{{jsonData}}</div>
-    <mt-button type="default">default</mt-button>
-    <mt-button type="primary">primary</mt-button>
-    <mt-button type="danger">danger</mt-button>
+    <v-header :title='title'></v-header>
+    <v-content>
+      <button @click="testData">get data</button>
+      <ul class="am-list am-list-static am-list-border">
+        <router-link :to='{name:"info",params:{name:"june"}}'>
+          <li>1232</li>
+        </router-link>
+        <li>1232</li>
+        <li>1232</li>
+        <li>1232</li>
+      </ul>
+    </v-content>
     <!--<v-actionsheet></v-actionsheet>-->
   </div>
 </template>
@@ -24,7 +32,9 @@ import url from 'core/requestUrl'
 export default {
   data(){
     return{
-      jsonData:null
+      jsonData:null,
+      title:'My',
+      name:'june'
     }
 
   },

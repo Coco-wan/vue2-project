@@ -10,6 +10,7 @@
 </style>
 <template>
   <div>
+    <v-header :title='title'></v-header>
     <v-content>
       <v-hello></v-hello>
     </v-content>
@@ -19,6 +20,11 @@
   export default{
     methods:{
 
+    },
+    data(){
+      return {
+        title:'Home'
+      }
     }
   }
 </script>
