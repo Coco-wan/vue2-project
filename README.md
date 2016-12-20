@@ -24,4 +24,9 @@ npm run e2e
 npm test
 ```
 
+### 如图：
+----------
+![image](https://github.com/syun0216/vue2-project/raw/master/src/assets/showimg.png)
+----------
+
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
