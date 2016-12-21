@@ -4,6 +4,7 @@
       <transition :name='transitionName'>
         <router-view></router-view>
       </transition>
+    <mu-divider/>
     <!--<v-footer></v-footer>-->
     <tab-bar v-if='showFooter'></tab-bar>
   </div>
